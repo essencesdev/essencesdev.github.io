@@ -1,0 +1,87 @@
+:root {
+	/* hund colorscheme */
+	--dark-bg: #161616;
+	--dark-fg: #ffffff;
+	--dark-00: #222222;
+	--dark-01: #e84f4f;
+	--dark-02: #b7ce42;
+	--dark-03: #fea63c;
+	--dark-04: #66aabb;
+	--dark-05: #b74163;
+	--dark-06: #6d878d;
+	--dark-07: #dddddd;
+	--dark-10: #666666;
+	--dark-11: #d23d3d;
+	--dark-12: #bde077;
+	--dark-13: #ffe863;
+	--dark-14: #aaccbb;
+	--dark-15: #e16a98;
+	--dark-16: #42717b;
+	--dark-17: #cccccc;
+
+	/* mostly-bright colorscheme */
+	--light-bg: #f3f3f3;
+	--light-fg: #707070;
+	--light-00: #d3d3d3;
+	--light-01: #ef6b7b;
+	--light-02: #a1d569;
+	--light-03: #f59335;
+	--light-04: #4ec2e8;
+	--light-05: #fec7cd;
+	--light-06: #95c1c0;
+	--light-07: #707070;
+	--light-10: #b3b3b3;
+	--light-11: #ed5466;
+	--light-12: #afdb80;
+	--light-13: #f59335;
+	--light-14: #5dc7ea;
+	--light-15: #d2a4b4;
+	--light-16: #75a1a0;
+	--light-17: #909090;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: var(--dark-bg);
+		--fg: var(--dark-fg);
+		--grey-1: var(--dark-00);
+		--grey-2: var(--dark-10);
+		--red-1: var(--dark-01);
+		--red-2: var(--dark-11);
+		--green-1: var(--dark-02);
+		--green-2: var(--dark-12);
+		--orange-1: var(--dark-03);
+		--orange-2: var(--dark-13);
+		--blue-1: var(--dark-04);
+		--blue-2: var(--dark-14);
+		--pink-1: var(--dark-05);
+		--pink-2: var(--dark-15);
+		--teal-1: var(--dark-06);
+		--teal-2: var(--dark-16);
+		--grey-3: var(--dark-07);
+		--grey-4: var(--dark-17);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg: var(--light-bg);
+		--fg: var(--light-fg);
+		--grey-1: var(--light-00);
+		--grey-2: var(--light-10);
+		--red-1: var(--light-01);
+		--red-2: var(--light-11);
+		--green-1: var(--light-02);
+		--green-2: var(--light-12);
+		--orange-1: var(--light-03);
+		--orange-2: var(--light-13);
+		--blue-1: var(--light-04);
+		--blue-2: var(--light-14);
+		--pink-1: var(--light-05);
+		--pink-2: var(--light-15);
+		--teal-1: var(--light-06);
+		--teal-2: var(--light-16);
+		--grey-3: var(--light-07);
+		--grey-4: var(--light-17);
+	}
+}
