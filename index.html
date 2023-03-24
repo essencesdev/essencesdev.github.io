@@ -1,22 +1,47 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="/colors.css" />
+		<link rel="stylesheet" href="./colors.css" />
 		<style>
+			:root {
+				--spacing: 25px;
+				--target-length: 200px;
+			}
+			* {
+				box-sizing: border-box;
+			}
 			body {
 				display: flex;
 				flex-wrap: wrap;
 				background: var(--bg);
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
 			}
-			div {
-				width: 200px;
-				height: 200px;
-				margin: 20px;
+			#first {
+				color: var(--bg);
+				text-align: center;
+				width: calc(var(--target-length) * 3 + var(--spacing) * 4);
+				font-size: 25px;
+			}
+			div, a {
+				padding: var(--spacing);
+				width: var(--target-length);
+				height: var(--target-length);
+				margin: var(--spacing);
+				text-decoration: none;
+			}
+			a:hover {
+				border: 1px solid var(--fg);
 			}
 		</style>
 	</head>
 	<body>
-		<div style="background-color: var(--fg)"></div>
-		<div style="background-color: var(--grey-1)"></div>
+		<div id="first" style="background-color: var(--fg)">
+		</div>
+		<a style="background-color: var(--grey-1); color: var(--grey-4)"
+			href="ffmpeg-web">
+			ffmpeg-web
+			<p>A stripped version of ffmpeg that you can use in your browser</p>
+		</a>
 		<div style="background-color: var(--grey-2)"></div>
 		<div style="background-color: var(--red-1)"></div>
 		<div style="background-color: var(--red-2)"></div>
