@@ -4,23 +4,14 @@
 		<link rel="stylesheet" href="./colors.css" />
 		<style>
 			:root {
-				--spacing: 25px;
-				--target-length: 200px;
-			}
-			* {
-				box-sizing: border-box;
+				--target-length: 150px;
+				--spacing: calc(var(--target-length) / 8);
 			}
 			body {
 				display: flex;
 				flex-wrap: wrap;
 				background: var(--bg);
 				font-family: Verdana, Geneva, Tahoma, sans-serif;
-			}
-			#first {
-				color: var(--bg);
-				text-align: center;
-				width: calc(var(--target-length) * 3 + var(--spacing) * 4);
-				font-size: 25px;
 			}
 			div, a {
 				padding: var(--spacing);
@@ -30,31 +21,43 @@
 				text-decoration: none;
 			}
 			a:hover {
-				border: 1px solid var(--fg);
+				outline: 1px solid var(--fg);
+				filter: invert(10%);
 			}
 		</style>
 	</head>
 	<body>
-		<div id="first" style="background-color: var(--fg)">
-		</div>
 		<a style="background-color: var(--grey-1); color: var(--grey-4)"
 			href="ffmpeg-web">
 			ffmpeg-web
-			<p>A stripped version of ffmpeg that you can use in your browser</p>
+			<p>
+				A stripped version of ffmpeg that you can use in your browser
+			</p>
 		</a>
-		<div style="background-color: var(--grey-2)"></div>
-		<div style="background-color: var(--red-1)"></div>
+		<a style="background-color: var(--grey-2); color: var(--grey-3)"
+			href="record-web">
+			record-web
+			<p>
+				Record and save your screen. But I'm sure your OS has this
+				feature built in
+			</p>
+		</a>
+		<a style="background-color: var(--red-1); color: var(--green-2)"
+			href="peer">
+			peer
+			<p>WebRTC powered media sharing and communication web app</p>
+		</a>
 		<div style="background-color: var(--red-2)"></div>
-		<div style="background-color: var(--green-1)"></div>
-		<div style="background-color: var(--green-2)"></div>
 		<div style="background-color: var(--orange-1)"></div>
+		<div style="background-color: var(--teal-1)"></div>
+		<div style="background-color: var(--teal-2)"></div>
 		<div style="background-color: var(--orange-2)"></div>
 		<div style="background-color: var(--blue-1)"></div>
 		<div style="background-color: var(--blue-2)"></div>
 		<div style="background-color: var(--pink-1)"></div>
 		<div style="background-color: var(--pink-2)"></div>
-		<div style="background-color: var(--teal-1)"></div>
-		<div style="background-color: var(--teal-2)"></div>
+		<div style="background-color: var(--green-1)"></div>
+		<div style="background-color: var(--green-2)"></div>
 		<div style="background-color: var(--grey-3)"></div>
 		<div style="background-color: var(--grey-4)"></div>
 	</body>
